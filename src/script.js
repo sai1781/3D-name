@@ -70,8 +70,8 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
     // )
     //     (OR) we can below line code easily one line code to center the text
     textgeometry.center()
-    const material = new THREE.MeshMatcapMaterial({matcap:matcapTexture})
-    // const material = new THREE.MeshNormalMaterial()
+//     const material = new THREE.MeshMatcapMaterial({matcap:matcapTexture})
+    const material = new THREE.MeshNormalMaterial()
     const text = new THREE.Mesh(textgeometry, material)
     scene.add(text)
     console.time("donutMesh")
@@ -101,7 +101,7 @@ fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
  * Base
  */
 // Debug
-const gui = new dat.GUI()
+// const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
